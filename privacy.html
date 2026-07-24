@@ -17,15 +17,15 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">BotanicaLashes &middot; Effective date: June 29, 2026</p>
+<p class="meta">BotanicaLashes &middot; Effective date: July 24, 2026</p>
 
 <p>ANASTASIIA SHILOVSKAIA ("we", "us", or "our") built <strong>BotanicaLashes</strong> as a paid iOS application. This page explains what data we collect, why, and how it is used.</p>
 
 <h2>1. Photos and Camera</h2>
-<p>BotanicaLashes accesses your device camera and photo library to apply virtual lash overlays on images you choose. All image processing is performed <strong>locally on your device</strong> using Google ML Kit for face detection. No photos or images are uploaded to our servers or any third-party server.</p>
+<p>BotanicaLashes accesses your device camera and photo library to apply virtual lash overlays on images you choose. All image processing is performed <strong>locally on your device</strong>. No photos or images are uploaded to our servers or any third-party server.</p>
 
-<h2>2. iCloud Identity (Team Features)</h2>
-<p>If you use Team features, we store an anonymous iCloud user identifier — provided by Apple — in Apple's CloudKit database. This identifier is used solely to associate you with a team seat. It cannot be used to identify you outside of iCloud. This data is stored in Apple's infrastructure and subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+<h2>2. Face Data (Eye Detection)</h2>
+<p>To position the virtual lash overlay correctly, BotanicaLashes analyzes the photo you provide to detect the outline of your eyes (eyelid contour and inner/outer corners), using Google ML Kit and, as a fallback, Apple's Vision framework. This analysis runs <strong>entirely on your device</strong> — the photo, the detected face, and the eye-contour coordinates are never transmitted to our servers, to Google, or to any other third party. This data exists only in the app's memory for the duration of your editing session, is used solely to render the lash overlay, and is discarded — not saved to disk, not backed up, not synced to iCloud or any server — as soon as you select a different photo or close the app. BotanicaLashes does not perform facial recognition or identification: on-device detection only locates eye landmarks for cosmetic overlay positioning and cannot be used to identify who is in the photo.</p>
 
 <h2>3. Subscription and Purchase Data (RevenueCat)</h2>
 <p>We use RevenueCat to manage in-app subscriptions. RevenueCat may collect your device identifier and purchase history to process and validate your subscription. For details, see <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</p>
@@ -34,21 +34,20 @@
 <ul>
   <li>We do not collect your name, email address, or any directly identifiable personal information.</li>
   <li>We do not upload or store your photos on any server.</li>
+  <li>We do not perform facial recognition or store any biometric identifiers.</li>
   <li>We do not track your location.</li>
   <li>We do not display third-party advertising.</li>
 </ul>
 
 <h2>5. Data Retention</h2>
 <ul>
-  <li><strong>Photos:</strong> processed in memory only; never stored permanently by us.</li>
-  <li><strong>CloudKit team data:</strong> retained until you leave the team or the team is deleted by the owner.</li>
+  <li><strong>Photos and detected eye-contour data:</strong> processed and held in memory only; never stored permanently by us, on any server, or in iCloud.</li>
   <li><strong>Purchase data:</strong> retained by RevenueCat as described in their policy.</li>
 </ul>
 
 <h2>6. Third-Party Services</h2>
 <ul>
   <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a> — subscription management</li>
-  <li><a href="https://www.apple.com/legal/privacy/">Apple CloudKit</a> — team seat synchronisation</li>
   <li><a href="https://developers.google.com/ml-kit/terms">Google ML Kit</a> — on-device face detection (no data leaves your device)</li>
 </ul>
 
